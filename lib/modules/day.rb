@@ -36,7 +36,7 @@ module WeekOfMonth
     def days_array
       day = self.beginning_of_month.to_date.cwday
       array = []
-      array[day - 1] = 1
+      array[day] = 1
       (2..self.end_of_month.mday).each {|i| array << i }
       array
     end

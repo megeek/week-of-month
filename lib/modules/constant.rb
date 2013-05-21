@@ -35,7 +35,7 @@ module WeekOfMonth
                             :november => 11, :december => 12 }
    
    # array of days names ordered starting with monday and ending with sunday. 
-    DAYS_IN_SEQUENCE = [ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday",
-                         "Saturday", "Sunday"]
+    DAYS_IN_SEQUENCE = [ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday",
+                         "Saturday"]
   end
 end
