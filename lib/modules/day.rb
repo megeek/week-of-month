@@ -41,6 +41,14 @@ module WeekOfMonth
       array
     end
 
+    def full_days_array(format="%Y-%m")
+      day = self.beginning_of_month.to_date.cwday
+      array = []
+      array[day] = self.strftime(format) + "-01"
+      (2..self.end_of_month.mday).each {|i| array << "#{self.strftime(format)}-#{"%02d" % i}" }
+      array
+    end
+
     # Date.new(2012,11,1).name_of_week_day
     #   => 'Thursday'
     # @return [String]
