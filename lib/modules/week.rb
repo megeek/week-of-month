@@ -115,7 +115,7 @@ module WeekOfMonth
     #   => 5
     # @return [Fixnum] 
     def days_past_in_week
-      self.to_date.cwday
+      self.to_date.wday
     end
     
     # it returns days left in the week
